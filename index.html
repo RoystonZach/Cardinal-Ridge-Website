@@ -3,123 +3,112 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Business Name</title>
-  <meta name="description" content="Brief description of your business.">
-  <style>
-    :root {
-      --ink: #17202a;
-      --muted: #59616b;
-      --accent: #176b57;
-      --paper: #f7f5f0;
-      --white: #ffffff;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: var(--ink);
-      background: var(--paper);
-      line-height: 1.55;
-    }
-
-    header {
-      padding: 22px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: var(--white);
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: .03em;
-    }
-
-    nav a {
-      color: var(--ink);
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: .95rem;
-    }
-
-    .hero {
-      padding: 96px 7%;
-      max-width: 900px;
-    }
-
-    h1 {
-      margin: 0 0 16px;
-      font-size: clamp(2.5rem, 7vw, 5rem);
-      line-height: 1;
-    }
-
-    .hero p {
-      max-width: 640px;
-      font-size: 1.15rem;
-      color: var(--muted);
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 12px 18px;
-      border-radius: 6px;
-      background: var(--accent);
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    section {
-      padding: 56px 7%;
-      background: var(--white);
-    }
-
-    .contact {
-      background: var(--paper);
-    }
-
-    footer {
-      padding: 24px 7%;
-      color: var(--muted);
-      font-size: .9rem;
-    }
-  </style>
+  <meta name="description" content="Cardinal Ridge Builders creates custom homes and barndominiums throughout Central Wisconsin.">
+  <title>Cardinal Ridge Builders | Custom Homes & Barndominiums</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="brand">YOUR BUSINESS NAME</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="logo-link" href="index.html" aria-label="Cardinal Ridge Builders home">
+        <img class="logo" src="logo-large.svg" alt="Cardinal Ridge Builders">
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a class="nav-contact" href="contact.html">Contact Us</a>
+      </nav>
+    </div>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Clear headline about what you do.</h1>
-      <p>
-        Add one or two sentences explaining who you help, what you offer,
-        and why someone should contact you.
-      </p>
-      <a class="button" href="#contact">Get in touch</a>
+      <div class="hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow">Central Wisconsin</p>
+          <h1>Custom homes built for the way you live.</h1>
+          <p class="hero-text">
+            Cardinal Ridge Builders creates thoughtfully built custom homes and
+            barndominiums for families throughout Central Wisconsin.
+          </p>
+          <a class="button button-light" href="contact.html">Start Your Project</a>
+        </div>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Replace this text with a short introduction to your business.</p>
+    <section class="section services">
+      <div class="section-inner">
+        <div class="section-intro">
+          <p class="eyebrow">What We Build</p>
+          <h2>A home should fit your land, your needs, and your future.</h2>
+          <p>
+            We bring a practical, personalized approach to every build—whether
+            you are planning a traditional custom home or a modern barndominium.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-number">01</span>
+            <h3>Custom Home Builds</h3>
+            <p>Homes planned around your lifestyle, property, priorities, and long-term needs.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">02</span>
+            <h3>Barndominiums</h3>
+            <p>Functional, durable, and distinctive spaces that combine efficient design with everyday comfort.</p>
+          </article>
+
+          <article class="service-card">
+            <span class="service-number">03</span>
+            <h3>Personalized Guidance</h3>
+            <p>A straightforward building experience with attention to the details that matter most to you.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+    <section class="section process">
+      <div class="section-inner process-grid">
+        <div>
+          <p class="eyebrow">Our Approach</p>
+          <h2>Clear communication from the first conversation onward.</h2>
+        </div>
+        <div class="process-copy">
+          <p>
+            Building a home is a significant investment. We believe the process
+            should be organized, transparent, and focused on the finished home
+            you want to live in.
+          </p>
+          <ul class="process-list">
+            <li><span>01</span>Discuss your vision and property</li>
+            <li><span>02</span>Plan a home around your priorities</li>
+            <li><span>03</span>Build with craftsmanship and care</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-inner">
+        <h2>Ready to talk about your custom home or barndominium?</h2>
+        <a class="button button-light" href="contact.html">Contact Us</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    © 2026 YOUR BUSINESS NAME
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Cardinal Ridge Builders</div>
+        <p class="footer-text">Custom Home Builds &amp; Barndominiums in Central Wisconsin</p>
+        <p class="footer-text"><a href="mailto:info@cardinalridgebuilders.com">info@cardinalridgebuilders.com</a></p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
   </footer>
 </body>
 </html>
