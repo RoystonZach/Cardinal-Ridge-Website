@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Business Name</title>
+  <meta name="description" content="Brief description of your business.">
+  <style>
+    :root {
+      --ink: #17202a;
+      --muted: #59616b;
+      --accent: #176b57;
+      --paper: #f7f5f0;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.55;
+    }
+
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--white);
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: .03em;
+    }
+
+    nav a {
+      color: var(--ink);
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: .95rem;
+    }
+
+    .hero {
+      padding: 96px 7%;
+      max-width: 900px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1;
+    }
+
+    .hero p {
+      max-width: 640px;
+      font-size: 1.15rem;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 12px 18px;
+      border-radius: 6px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 56px 7%;
+      background: var(--white);
+    }
+
+    .contact {
+      background: var(--paper);
+    }
+
+    footer {
+      padding: 24px 7%;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">YOUR BUSINESS NAME</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Clear headline about what you do.</h1>
+      <p>
+        Add one or two sentences explaining who you help, what you offer,
+        and why someone should contact you.
+      </p>
+      <a class="button" href="#contact">Get in touch</a>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Replace this text with a short introduction to your business.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 YOUR BUSINESS NAME
+  </footer>
+</body>
+</html>
