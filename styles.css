@@ -249,6 +249,10 @@ h3 {
   background: var(--sand);
 }
 
+.process .eyebrow {
+  color: var(--forest-dark);
+}
+
 .process-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
