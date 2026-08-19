@@ -44,7 +44,7 @@ a {
 
 .nav-wrap {
   width: min(100% - 40px, var(--max-width));
-  min-height: 92px;
+  min-height: 120px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -58,7 +58,7 @@ a {
 }
 
 .logo {
-  width: 220px;
+  width: 200px;
   height: auto;
 }
 
@@ -404,11 +404,11 @@ h3 {
 
 @media (max-width: 760px) {
   .nav-wrap {
-    min-height: 76px;
+    min-height: 96px;
   }
 
   .logo {
-    width: 168px;
+    width: 150px;
   }
 
   .site-nav {
